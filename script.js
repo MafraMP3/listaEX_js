@@ -1,19 +1,38 @@
-console.log("Hello World");
+// console.log("Hello World");
 
-let nome = "Davi Sefnem";
-const pi = 3.14;
-let n1 = 1;
-let n2 = 2;
+// let nome = "Davi Sefnem";
+// const pi = 3.14;
+// let n1 = 1;
+// let n2 = 2;
 
-console.log(nome);
+// console.log(nome);
 
-console.log(n1+n2);
+// console.log(n1+n2);
 
-function somar(x,y){
-    console.log(x+y);
+// function somar(x,y){
+//     console.log(x+y);
+// }
+// function saudacao(){
+//     console.log("Olá, meu nome é " + nome);
+// }
+// somar(5,5);
+// saudacao()
+
+function somarNumeros(){
+    let soma = 0;
+    let continuar = true;   
+
+    while(continuar === true){
+        let numero = parseFloat(prompt("Digite um numero: "));
+
+        if(isNaN(numero)){
+            alert("Por favor, digite um numero valido");
+        }else{
+            soma+= numero;
+        }
+        continuar = confirm("Deseja adicionar mais um numero?");
+    }
+    alert("A soma dos numeros é: " + soma);
 }
-function saudacao(){
-    console.log("Olá, meu nome é " + nome);
-}
-somar(5,5);
-saudacao()
+
+somarNumeros();
