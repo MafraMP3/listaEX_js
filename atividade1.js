@@ -18,12 +18,12 @@
 // somar(5,5);
 // saudacao()
 
-function ativdade1(){
+function atividade1(){
     let soma = 0;
     let continuar = true;   
 
     while(continuar === true){
-        let numero = parseFloat(prompt("Digite um numero: "));
+        let numero = parseFloat(prompt("Digite um numero: (Ou 0 para encerrar)"));
 
         if(isNaN(numero)){
             alert("Por favor, digite um numero valido");
