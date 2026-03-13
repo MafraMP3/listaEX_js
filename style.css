@@ -4,13 +4,22 @@
     padding: 20px;
     margin: 10px;
     width: 300px;
-    box-shadow: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    transition: 0.3s;
 }
 
+.card:hover{
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    transform: translateY(-3px);
+    background-color: rgb(133, 133, 133);
+    color: rgb(255, 255, 255);
+}
 .botao{
-    background-color: rgb(255, 255, 255);
     padding: 10px;
     cursor: pointer;
+}
+.botao:hover{
+    text-decoration: underline;
 }
 html{
     background-color: rgb(255, 224, 46);
