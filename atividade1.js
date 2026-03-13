@@ -18,7 +18,7 @@
 // somar(5,5);
 // saudacao()
 
-function somarNumeros(){
+function ativdade1(){
     let soma = 0;
     let continuar = true;   
 
@@ -27,6 +27,11 @@ function somarNumeros(){
 
         if(isNaN(numero)){
             alert("Por favor, digite um numero valido");
+        }
+        
+        if(numero==0){
+            continuar = false;
+            return;
         }else{
             soma+= numero;
         }
