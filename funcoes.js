@@ -69,3 +69,22 @@ function atividade3(){
     alert("O ganho bruto anual foi de: R$:" + bruto);
     alert("O gasto anual foi de: R$:" + gasto);
 }
+
+function atividade4(){
+    let vetor = [];
+    let aux;
+
+    for (let i = 0; i <4; i++){
+        vetor[i] = parseInt(prompt("Insira um numero"));
+    }
+    for (i=0; i<4; i++){
+        for (let j=0; j<3;j++){
+           if(vetor[j] < vetor[j+1]){
+            aux = vetor[j];
+            vetor[j] = vetor[j+1];
+            vetor[j+1] = aux;
+           } 
+        }
+    }
+    alert("Os numeros ordenados em forma decrescente ficam assim:" + vetor[0] + "-" + vetor[1] + "-" + vetor[2] + "-" + vetor[3]);
+}
