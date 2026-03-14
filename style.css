@@ -21,15 +21,12 @@
 .botao:hover{
     text-decoration: underline;
 }
-html{
-    background-color: rgb(255, 224, 46);
-}
-body{
-    background-color: rgb(255, 255, 255);
 
-    border: 1px solid black;
-    margin-top: 0;
-    margin-bottom: 0;
+
+body{
+    background-image: url(assets/images/undefined\ -\ Imgur\ \(1\).png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 #container_atividades{
     display: grid ;
@@ -38,11 +35,8 @@ body{
     justify-content: center;
     justify-items: center;
 }
-#javalogo{
-    width: 70px;
-    height: 70px;
-    align-self: center;
-    margin: 2px;
+#titulo{
+    width: 800px;
 }
 .flex{
     display: flex;
