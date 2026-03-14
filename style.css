@@ -1,11 +1,11 @@
 .card{
-    background-color: rgb(255, 255, 255);
-    border: 1px solid rgb(0, 0, 0);
+
     padding: 20px;
-    margin: 10px;
+    margin: 3px;
     width: 300px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    color: rgb(255, 255, 255);
     transition: 0.3s;
+    font-family: "Trajan", sans-serif;
 }
 
 .card:hover{
@@ -13,6 +13,7 @@
     transform: translateY(-3px);
     background-color: rgb(133, 133, 133);
     color: rgb(255, 255, 255);
+    
 }
 .botao{
     padding: 10px;
@@ -21,7 +22,10 @@
 .botao:hover{
     text-decoration: underline;
 }
-
+@font-face {
+    font-family: "Trajan";
+    src: url(assets/fonts/trajan.ttf) format("truetype");
+}
 
 body{
     background-image: url(assets/images/undefined\ -\ Imgur\ \(1\).png);
@@ -29,14 +33,17 @@ body{
     background-size: cover;
 }
 #container_atividades{
-    display: grid ;
-    grid-template-columns: repeat(3, 400px);
-    gap: 2px;
     justify-content: center;
     justify-items: center;
+    flex-direction: column;
+    height: 350px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    scrollbar-width: none;
 }
 #titulo{
-    width: 800px;
+    width: 1100px;
+    margin-top: 85px;
 }
 .flex{
     display: flex;
