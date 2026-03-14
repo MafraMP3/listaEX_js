@@ -85,6 +85,19 @@ function atividade4(){
             vetor[j+1] = aux;
            } 
         }
+
     }
     alert("Os numeros ordenados em forma decrescente ficam assim:" + vetor[0] + "-" + vetor[1] + "-" + vetor[2] + "-" + vetor[3]);
+}
+
+function atividade5(){
+    let numero = 0;
+
+    numero = parseInt (prompt( "Insira um numero inteiro"));
+
+    if(numero %2 == 0){
+        alert(" Seu numero é par");
+    }else{
+        alert("Seu numero é impar");
+    }
 }
