@@ -113,3 +113,46 @@ function atividade6(){
         alert("Sua letra é uma consoante");
     }
 }
+function atividade7(){
+    let id;
+
+    id = prompt("Insira  o codigo do produto");
+    switch(id) {
+        case 'a':
+            alert("O valor do sorvete de chocolate é R$:1,50.");
+            break;
+        
+        case 'b':
+            alert("O valor do sorvete de morango é R$:2,50.");
+            break;
+        
+        case 'c':
+            alert("O valor do sorvete de creme é R$:2,50.");
+            break;
+        
+        case 'd':
+            alert("O valor do sorvete de manga é R$:3,20.");
+            break;
+        
+        case 'e':
+            alert("O valor do sorvete de melancia é R$:3,40.");
+            break;
+        
+        case 'f':
+            alert("O valor do sorvete de vanila ice é R$:3,00.");
+            break;
+        
+        case 'g':
+            alert("O valor do sorvete de ceu azul é R$:3,60.");
+            break;
+        
+        case 'h':
+            alert("O valor do sorvete de brownie é R$:4,00.");
+            break;
+
+         case 'i':
+            alert("O valor do sorvete de hawaiano é R$:5,00.");
+            break;
+        
+    }
+}
