@@ -101,3 +101,15 @@ function atividade5(){
         alert("Seu numero é impar");
     }
 }
+
+function atividade6(){
+    let letra;
+
+    letra = prompt("Insira uma letra do alfabeto");
+
+    if(letra == 'a' || letra == 'e' || letra == 'i' || letra =="o" || letra == 'u'){
+        alert("Sua letra é uma vogal");
+    } else {
+        alert("Sua letra é uma consoante");
+    }
+}

@@ -3,16 +3,16 @@
     padding: 20px;
     margin: 3px;
     width: 300px;
-    color: rgb(255, 255, 255);
+    color: rgb(214, 214, 214);
     transition: 0.3s;
     font-family: "Trajan", sans-serif;
+    filter: blur(0.6px);
 }
 
 .card:hover{
-    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
     transform: translateY(-3px);
-    background-color: rgb(133, 133, 133);
     color: rgb(255, 255, 255);
+    filter: brightness(1000000);
     
 }
 .botao{
