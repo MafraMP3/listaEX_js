@@ -156,3 +156,67 @@ function atividade7(){
         
     }
 }
+
+function atividade8(){
+    let n1;
+    let n2;
+    let resultado;
+
+    n1 = Math.floor(Math.random() * 10);
+    n2 = Math.floor(Math.random() * 10);
+
+    alert("A primeira variavel é: " + n1);
+    alert("A segunda variavel é: " + n2);
+
+    alert("A diferença delas é:" + (n1 - n2));
+    resultado = ((n1*2) + (n2 *3));
+    alert(" O dobro da primeira variável somado ao triplo da segunda é: " + resultado);
+    resultado = (n1 * n2);
+     alert("A multiplicação das variaveis é: " + resultado);
+}
+
+function atividade9(){
+    let n1;
+    let n2;
+
+    n1 = Math.floor(Math.random() * 10);
+    n2 = Math.floor(Math.random() * 10);
+
+    if(n1 > n2){
+        alert("Os valores, em ordem crescente são: " + n1 + n2);
+    }else{
+        alert("Os valores, em ordem crescente são: " + n2 + n1);
+    }
+
+}
+
+function atividade10(){
+    let nome;
+    let salarioBruto;
+    let salarioLiquido;
+
+    nome = prompt("Insira o nome do funcionario");
+    salarioBruto = prompt("Insira o salario bruto do funcionario");
+
+    salarioLiquido = (salarioBruto - (salarioBruto*0.08));
+    alert("O salario bruto do funcionario "+nome+" é "+salarioBruto+", descontando 8% do inss, o salario liquido fica: "+salarioLiquido);
+}
+
+function atividade11(){
+    let nome;
+    let salarioBruto;
+    let salarioLiquido;
+    let desconto = 0.08;
+
+    nome = prompt("Insira o nome do funcionario");
+    salarioBruto = prompt("Insira o salario bruto do funcionario");
+
+    if(salarioBruto>1000){
+        desconto = 0.085;
+    }if(salarioBruto>1500){
+        desconto = 0.09;
+    }
+
+    salarioLiquido = (salarioBruto - (salarioBruto*0.08));
+    alert("O salario bruto do funcionario "+nome+" é "+salarioBruto+", multiplicando por "+desconto+" do inss, o salario liquido fica: "+salarioLiquido);
+}
